@@ -1,14 +1,131 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=capitulo_01.html">
-  <title>Redirigiendo...</title>
-  <script>
-    window.location.replace("capitulo_01.html");
-  </script>
-</head>
-<body>
-  <p>Si no eres redirigido automáticamente, haz clic <a href="capitulo_01.html">aquí</a>.</p>
-</body>
-</html>
+<title>Como agua para chocolate</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+
+<nav class="nav" aria-label="Secciones">
+  <div class="nav-in">
+    <a class="brand" href="#inicio">Como agua para chocolate</a>
+    <ul class="links">
+      <li><a href="#inicio" data-sec="inicio">Inicio</a></li>
+      <li><a href="#datos" data-sec="datos">Datos de la obra</a></li>
+      <li><a href="#idea" data-sec="idea">Cómo surgió la idea</a></li>
+      <li><a href="#fotos" data-sec="fotos">Así la hicimos</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+<section id="inicio" class="band s1" aria-labelledby="t-inicio">
+  <div class="wrap">
+    <header class="hero">
+      <h1 id="t-inicio"><em>Fotonovela</em>Como agua para chocolate</h1>
+      <p class="lead">En el rancho de los De la Garza, la cocina es el único lugar donde Tita puede decir lo que siente. Cada plato que prepara lleva su amor, su rabia y su tristeza a quien se lo come. Esta fotonovela cuenta la historia de Laura Esquivel en doce capítulos, uno por mes, igual que la novela.</p>
+      <p class="hint">Elegí un mes en el carrusel y empezá a leer.</p>
+    </header>
+
+    <div id="car" role="region" aria-roledescription="carrusel" aria-label="Los doce capítulos">
+      <div class="car-head">
+        <h2>Los doce capítulos</h2>
+        <span class="car-count" id="car-count" aria-live="polite">1 / 12</span>
+      </div>
+      <div class="viewport" id="viewport"><div class="track" id="track"></div></div>
+      <div class="car-ctl">
+        <button class="arrow" id="prev" type="button" aria-label="Capítulo anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></button>
+        <ol class="months" id="months"></ol>
+        <button class="arrow" id="next" type="button" aria-label="Capítulo siguiente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="datos" class="band s2" aria-labelledby="t-datos">
+  <div class="wrap">
+    <p class="eyebrow">La novela</p>
+    <h2 id="t-datos">Datos de la obra</h2>
+    <div class="datos">
+      <div class="datos-main">
+        <p class="sinopsis">Tita de la Garza es la menor de tres hermanas en un rancho de Piedras Negras, en plena Revolución Mexicana. Una tradición familiar le prohíbe casarse y la obliga a cuidar a su madre, Mamá Elena, hasta que muera. Cuando Pedro, el hombre que ama, se casa con su hermana Rosaura para quedar cerca de ella, Tita encuentra en la cocina la forma de comunicarse con él. Sus emociones pasan a la comida y a quienes la prueban, con efectos que van del llanto colectivo al deseo desbordado.</p>
+        <dl class="ficha">
+          <dt>Título</dt><dd>Como agua para chocolate. Novela de entregas mensuales con recetas, amores y remedios caseros</dd>
+          <dt>Autora</dt><dd>Laura Esquivel (México, 1950)</dd>
+          <dt>Publicación</dt><dd>1989, Editorial Planeta Mexicana. Es su primera novela</dd>
+          <dt>Género</dt><dd>Romance y realismo mágico</dd>
+          <dt>Escenario</dt><dd>Piedras Negras, Coahuila, a comienzos del siglo XX</dd>
+          <dt>Estructura</dt><dd>Doce capítulos, uno por mes. Cada uno abre con una receta</dd>
+          <dt>Idiomas</dt><dd>Traducida a más de treinta idiomas. Versión al inglés de Carol y Thomas Christensen (1992)</dd>
+          <dt>Adaptaciones</dt><dd>Película de Alfonso Arau (1992, guion de la propia autora), ballet de The Royal Ballet (2022) y serie de HBO (2024)</dd>
+          <dt>Continuaciones</dt><dd>El diario de Tita (2016) y Mi negro pasado (2017)</dd>
+        </dl>
+      </div>
+      <div class="cover-col">
+        <div class="slot tall" data-slot="portada" data-label="Portada o foto de la novela"></div>
+        <p class="cap">Foto de la edición que leímos</p>
+      </div>
+      <div>
+        <button>Leer</button>
+      </div> 
+      
+    </div>
+  </div>
+</section>
+
+<section id="idea" class="band s3" aria-labelledby="t-idea">
+  <div class="wrap">
+    <p class="eyebrow">Detrás de la historia</p>
+    <h2 id="t-idea">Cómo surgió la idea</h2>
+    <div class="dos">
+      <article class="panel">
+        <h3>La idea de Laura Esquivel</h3>
+        <div class="bloque">
+          <h4>Dónde nació</h4>
+          <p>Esquivel contó que la novela se le ocurrió mientras cocinaba las recetas de su madre y de su abuela. Venía del teatro infantil y del cine, donde trabajaba como guionista.</p>
+        </div>
+        <div class="bloque">
+          <h4>Por qué se llama así</h4>
+          <p>En México, "como agua para chocolate" se dice de alguien a punto de explotar de enojo o de pasión. El agua para el chocolate tiene que estar justo en el hervor.</p>
+        </div>
+        <div class="bloque">
+          <h4>Cómo la armó</h4>
+          <p>Imitó las revistas para mujeres del siglo XIX, que publicaban un capítulo por mes junto a recetas y consejos para el hogar.</p>
+        </div>
+      </article>
+
+      <article class="panel">
+        <h3>Nuestra idea</h3>
+        <p class="nota">Texto de ejemplo. Hacé clic en cada párrafo para escribir la historia de tu grupo.</p>
+        <div class="bloque">
+          <h4>Por qué elegimos esta novela</h4>
+          <p class="edit" contenteditable="true" spellcheck="true" id="e1">Contá acá cómo llegaron a Como agua para chocolate y qué fue lo que más les llamó la atención del libro.</p>
+        </div>
+        <div class="bloque">
+          <h4>Qué quisimos contar</h4>
+          <p class="edit" contenteditable="true" spellcheck="true" id="e2">Explicá qué momentos de cada mes eligieron mostrar con fotos y por qué.</p>
+        </div>
+        <div class="bloque">
+          <h4>Cómo la pensamos como fotonovela</h4>
+          <p class="edit" contenteditable="true" spellcheck="true" id="e3">Escribí cómo repartieron los personajes, los escenarios y las recetas entre el grupo.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="fotos" class="band s4" aria-labelledby="t-fotos">
+  <div class="wrap">
+    <p class="eyebrow">Backstage</p>
+    <h2 id="t-fotos">Así la hicimos</h2>
+    <div class="galeria" id="galeria"></div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Fotonovela basada en la novela de Laura Esquivel (1989).</span>
+    <span>Hacé clic en un recuadro punteado para agregar una foto.</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
